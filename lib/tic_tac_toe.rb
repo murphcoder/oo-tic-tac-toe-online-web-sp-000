@@ -86,7 +86,7 @@ class TicTacToe
     return (move >= 0 && move <= 8 && !position_taken?(move))
   end
   def turn
-    puts "Player #{current_player}, Please enter 1-9:"
+    puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
     until valid_move?(index)
